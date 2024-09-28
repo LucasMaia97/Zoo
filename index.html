@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bem-vindo ao Zoológico</title>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Zoológico</h1>
+        <p>Descubra nossos recintos e os animais que podem se sentir em casa aqui.</p>
+    </header>
+
+    <main>
+        <section id="recintos">
+            <h2>Recintos Disponíveis</h2>
+            <ul>
+                <li> Recinto 1: Savana (10 m², 3 macacos)</li>
+                <li> Recinto 2: Floresta (5 m², vazio)</li>
+                <li> Recinto 3: Savana e Rio (7 m², 1 gazela)</li>
+                <li> Recinto 4: Rio (8 m², vazio)</li>
+                <li> Recinto 5: Savana (9 m², 1 leão)</li>
+            </ul>
+        </section>
+
+        <section id="animais">
+            <h2>Animais Permitidos</h2>
+            <ul>
+                <li>Leão - 3 m² - Savana</li>
+                <li>Leopardo - 2 m² - Savana</li>
+                <li>Crocodilo - 3 m² - Rio</li>
+                <li>Macaco - 1 m² - Savana ou Floresta</li>
+                <li>Gazela - 2 m² - Savana</li>
+                <li>Hipopótamo - 4 m² - Savana ou Rio</li>
+            </ul>
+        </section>
+
+        <section id="entrada">
+            <h2>Verifique Recintos Viáveis</h2>
+            <select id="tipoAnimal">
+                <option value="">Selecione um animal</option>
+                <option value="LEAO">Leão</option>
+                <option value="LEOPARDO">Leopardo</option>
+                <option value="CROCODILO">Crocodilo</option>
+                <option value="MACACO">Macaco</option>
+                <option value="GAZELA">Gazela</option>
+                <option value="HIPOPOTAMO">Hipopótamo</option>
+            </select>
+            <input type="number" id="quantidadeAnimal" placeholder="Quantidade">
+            <button id="verificarBtn">Verificar</button>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Zoológico. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
